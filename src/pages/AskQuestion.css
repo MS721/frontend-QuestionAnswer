@@ -1,0 +1,100 @@
+.ask-title {
+  color: var(--accent-color);
+  font-family: 'UnifrakturCook', cursive;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.ask-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background-color: var(--card-bg);
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ask-form label {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.ask-form input,
+.ask-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--accent-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  resize: vertical;
+  font-size: 1rem;
+}
+
+.ask-form input::placeholder,
+.ask-form textarea::placeholder {
+  color: #999;
+}
+
+.button {
+  padding: 12px;
+  background: var(--accent-color);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #1ca8c9;
+}
+
+.success-msg {
+  padding: 20px;
+  background: #c7f7d1;
+  color: #155724;
+  border-radius: 8px;
+  font-weight: 500;
+  text-align: center;
+  border: 1px solid #4caf50;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+/* 🔹 react-select dropdown */
+.tag-select {
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+/* Customize react-select theme to match */
+.tag-select .react-select__control {
+  background-color: var(--bg-color);
+  border-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+.tag-select .react-select__multi-value {
+  background-color: var(--accent-color);
+  color: #000;
+}
+
+.tag-select .react-select__multi-value__label {
+  color: #000;
+}
+
+.tag-select .react-select__multi-value__remove {
+  color: #000;
+}
+
+.tag-select .react-select__menu {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+.tag-select .react-select__option--is-focused {
+  background-color: var(--accent-color);
+  color: #000;
+}

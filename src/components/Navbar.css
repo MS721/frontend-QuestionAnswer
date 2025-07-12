@@ -1,0 +1,77 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: var(--card-bg);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar h1 {
+  font-size: 1.8rem;
+  color: var(--accent-color);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* 🔔 Notification Bell */
+.notification-bell {
+  position: relative;
+  cursor: pointer;
+}
+
+.bell-icon {
+  font-size: 1.3rem;
+}
+
+.notification-count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
+/* 🔽 Dropdown */
+.notification-dropdown {
+  position: absolute;
+  top: 28px;
+  right: 0;
+  background: var(--card-bg);
+  border: 1px solid var(--accent-color);
+  border-radius: 6px;
+  padding: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  width: 220px;
+  z-index: 10;
+}
+
+.notification-item {
+  padding: 6px;
+  font-size: 0.85rem;
+  color: var(--text-color);
+  border-bottom: 1px solid #444;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+/* 🧑 Role Switcher */
+.role-switcher {
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--accent-color);
+}

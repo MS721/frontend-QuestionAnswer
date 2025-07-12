@@ -1,0 +1,17 @@
+.question-title {
+  font-size: 1.4rem;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.question-desc {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.answer-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
